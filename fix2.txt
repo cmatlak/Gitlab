@@ -1,1 +1,93 @@
 
+cd documents - väljer var jag vill ha mitt repository
+
+mkdir Gitlab - skapar mapp till mitt repository
+
+git init - skapar ett git repository
+
+git checkout -b main - skapar en branch som kallas main och byter till den
+
+echo "duck" >> README.md
+echo "moose" >> README.md
+echo "cat">> README.md - skapar filen readme och lägger till 3 djur
+
+git add README.md - förbereder commit med rätt filnamn
+
+git commit -m "Initial commit" - gör en commit med meddelande
+
+git checkout -b feature1 - skapar branch feature1 och byter till den
+
+echo "dog" >> README.md - lägger till dog i listan
+
+sed -i 's/moose/mouse/' README.md - byter ut moose till mouse i listan
+
+git add README.md - förbereder en commit
+
+git commit -m "Add dog, replace moose with mouse" - commit med ett meddelande
+
+
+git checkout main - byter branch till main
+
+sed -i 's/moose/mahmut/' README.md - byter moose till mahmut i listan
+
+git add README.md - förbereder commit
+
+git commit -m "Replace moose with mahmut" - commit med meddelande
+
+git merge feature1 - påbörjar en merge av main och feature1
+
+Om det finns en mergekonflikt:
+Lös konflikten manuellt i README.md
+
+
+git add README.md - förbereder commit efter merge
+
+git commit -m "Merge feature1 into main" - commit med meddelande
+
+git tag extinct - skapar en lightweight tag med namnet extinct som pekar på mergen
+
+git reset --hard HEAD^ - backar main och head till föregående commit i main
+
+git branch feature2 - skapar branch feature2 men stannar på main
+
+
+sed -i 's/./\U&/' Readme.md-växlar till stor bokstav på alla djuren
+
+
+git add README.md - förbered commit
+
+git commit -m "Capitalize animal names"- commit med ett meddelande
+
+git checkout feature2 - byt till branch feature2
+
+echo "content for fix1.txt" > fix1.txt - lägger till en textfil med namnet fix1.txt
+
+git add fix1.txt - förbered för commit
+
+git commit -m "Add fix1.txt" - commit med meddelande
+
+echo "content for fix2.txt" > fix2.txt - lägger till textfil med namn fix2.txt
+
+git add fix2.txt - förbered commit
+
+git commit -m "Add fix2.txt" - commit med meddelande
+
+git checkout main - byt till main branch
+
+git ls-files - kolla så dom lokala filerna stämmer
+
+git switch feature2
+
+git log - för att hitta commit hashen
+git checkout main - byt till branchen jag vill ha cherry.picken till
+
+git cherry-pick "commit hash fix2" - gör en cherry-pick och väljer fix2.txt och den flyttas till main
+
+git ls-files - kollar så fix2.txt finns i main branch 
+
+skapade ett nytt repository på github
+
+
+git remote add origin "adressen till repot på github" - lägger till adressen till det fjärranslutna repositoryt
+
+git push -u origin main- pushar till mitt fjärr repository-

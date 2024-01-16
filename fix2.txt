@@ -90,4 +90,10 @@ skapade ett nytt repository på github
 
 git remote add origin "adressen till repot på github" - lägger till adressen till det fjärranslutna repositoryt
 
+
 git push -u origin main- pushar till mitt fjärr repository-nya kommandon
+
+
+git rebase -i HEAD~2, 
+git push origin main --force
+
